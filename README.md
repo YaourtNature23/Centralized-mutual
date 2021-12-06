@@ -3,26 +3,26 @@
 <img src="background.png">
 
 
-<h2>Contexte du projet<h2>
+<h2>Contexte du projet</h2>
 La population de la ville de SAFI a dépassé les 320 mille hab/m², le recouvrement médical est partout ainsi que les dossiers envoyés par les personnes cumulent jour après jour, du coup la DSI de la préfecture en collaboration avec la gouvernance des organismes de protection sociale sous tutelle (ressource 1) vont lancer un projet numérique qui vise la gestion des dossiers et des clients pour faciliter leur remboursement en respectant les conditions mutuelles de chacun d’eux.
 
 Bref, votre mission tant que consultant externe chez la préfecture de SAFI est collaborer dans la phase de développement du projet, et mettre en place l’application afin que les opérateurs puissent commencer de l’utiliser. La technologie demandée par le client est du Java 100%, et bien évidement ils ont proposé aussi que l’outil sera un exécutable sur le bureau (application Desktop).
 
 ​
 
-<h2>Workflow Phase 1 : <h2>
+<h2>Workflow Phase 1 : </h2>
 
-<h3>++Page 1 : (Authentification)++<h3>
+<h3>++Page 1 : (Authentification)++</h3>
 
 Un fonctionnaire d’une entité de mutuelle (par exemple : OMFAM) peut se connecter sur la plateforme. (Les fonctionnaires sont déjà sauvegardés dans un fichier JSON) ressource 2. NB : (les mots de passe ne sont pas hachés, vous pouvez les crypter Bonus)
 
 ​
 
-<h3>++Page 2 / onglet 1 : (Création d’un compte pour un client)++<h3>
+<h3>++Page 2 / onglet 1 : (Création d’un compte pour un client)++</h3>
 
 Un fonctionnaire peut créer un nouveau client suite à la demande d’organisme mère du client (Par exemple : Ahmed a commencé son nouveau boulot chez la Gendarmerie royale marocaine, cette dernière vont envoyer une demande de création d’un compte à l’OMFAM, et le fonctionnaire va s’occuper du reste.
 
-<h3>Les informations du client sont : <h3>
+<h3>Les informations du client sont : </h3>
 
 N° badge de travail : champ texte (10 charactères)
 Nom d’entreprise : champ texte (Max 50 charactères)
