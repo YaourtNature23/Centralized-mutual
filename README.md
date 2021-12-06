@@ -1,6 +1,6 @@
 # Centralized-mutual
 
-<img src="bacground.png">
+<img src="background.png">
 
 
 <h2>Contexte du projet<h2>
