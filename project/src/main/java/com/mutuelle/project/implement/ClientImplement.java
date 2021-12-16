@@ -29,6 +29,7 @@ public class ClientImplement implements ClientInterface {
         jsonObject.put("email",c.getEmail());
         jsonObject.put("adress",c.getAdress());
 
+        System.out.println(jsonObject);
         //jsonArray.add(jsonObject);
 
         JSONParser jsonParser = new JSONParser();
@@ -44,8 +45,9 @@ public class ClientImplement implements ClientInterface {
             //e.printStackTrace();
             System.out.println("error"+e.getMessage());
         }
-        clientList.add(jsonObject);
         System.out.println("The JSON representation of Object mobilePhone is ");
+        clientList.add(clientList);
+
         //System.out.println(new Gson().toJson(c));
         try(FileWriter fileWriter = new FileWriter("C:\\Users\\adm\\Desktop\\project\\project\\src\\main\\resources\\com\\mutuelle\\project\\assets\\myJson.json")){
             fileWriter.write(clientList.toJSONString());
