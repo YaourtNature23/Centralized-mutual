@@ -14,11 +14,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ClientImplement implements ClientInterface {
+    private JSONObject jsonObject;
+    private JSONArray jsonArray;
+    private  JSONArray clientList;
     @Override
     public void addClientInFile(Client c) {
-       JSONObject jsonObject = new JSONObject();
-       JSONArray jsonArray = new JSONArray();
-        JSONArray clientList = new JSONArray();
+       this.jsonObject = new JSONObject();
+       this.jsonArray = new JSONArray();
+        this.clientList = new JSONArray();
         jsonObject.put("numberPadge",c.getNumberPadge());
         jsonObject.put("comapnyName",c.getComapnyName());
         jsonObject.put("startDate",c.getStartDate().toString());
@@ -33,28 +36,28 @@ public class ClientImplement implements ClientInterface {
         //jsonArray.add(jsonObject);
 
         JSONParser jsonParser = new JSONParser();
-        try (FileReader reader = new FileReader("C:\\Users\\adm\\Desktop\\project\\project\\src\\main\\resources\\com\\mutuelle\\project\\assets\\myJson.json"))
+        try (FileReader reader = new FileReader("C:\\Users\\adm\\Desktop\\Centralized-mutual\\project\\version1\\src\\main\\resources\\com\\mutuelle\\project\\assets\\myJson.json"))
         {
             Object obj = jsonParser.parse(reader);
-
-            clientList = (JSONArray) obj;
-
+            this.clientList = (JSONArray) obj;
+            this.clientList.add(this.jsonObject);
+            System.out.println("this is client list ===>"+clientList);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
             //e.printStackTrace();
-            System.out.println("error"+e.getMessage());
+            System.out.println("error "+e.getMessage());
         }
         System.out.println("The JSON representation of Object mobilePhone is ");
 
         //System.out.println(new Gson().toJson(c));
-        try(FileWriter fileWriter = new FileWriter("C:\\Users\\adm\\Desktop\\project\\project\\src\\main\\resources\\com\\mutuelle\\project\\assets\\myJson.json")){
-            fileWriter.write(clientList.toJSONString());
+        try(FileWriter fileWriter = new FileWriter("C:\\Users\\adm\\Desktop\\Centralized-mutual\\project\\version1\\src\\main\\resources\\com\\mutuelle\\project\\assets\\myJson.json")){
+            fileWriter.write(this.clientList.toJSONString());
             fileWriter.flush();
         }catch (IOException e){
             e.printStackTrace();
         }
-        System.out.println(jsonArray);
+        System.out.println("jsonObject ===>"+this.jsonObject);
 
     }
 
