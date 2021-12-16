@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<SplitPane fx:controller="com.mutuelle.project.controller.ShowClientController" dividerPositions="0.5" orientation="VERTICAL" prefHeight="851.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="598.0">
+         <children>
+            <Pane prefHeight="156.0" prefWidth="602.0">
+               <children>
+                  <TextField layoutX="281.0" layoutY="65.0" prefHeight="27.0" prefWidth="222.0" promptText="work badge number" />
+                  <Label layoutX="37.0" layoutY="68.0" text="search customer by badge number">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+    <AnchorPane prefHeight="381.0" prefWidth="821.0">
+         <children>
+            <TableView layoutY="-4.0" prefHeight="697.0" prefWidth="1237.0">
+              <columns>
+                <TableColumn prefWidth="120.0" text="badge number" fx:id="number" />
+                <TableColumn prefWidth="115.0" text="Company name" fx:id="companyName" />
+                  <TableColumn minWidth="2.0" prefWidth="114.0" text="Work start date" fx:id="date" />
+                  <TableColumn prefWidth="105.0" text="First name" fx:id="firstName"/>
+                  <TableColumn prefWidth="97.0" text="name" fx:id="name"/>
+                  <TableColumn prefWidth="96.0" text="CIN" fx:id="cin" />
+                  <TableColumn prefWidth="137.0" text="Telephone" fx:id="telephon"/>
+                  <TableColumn prefWidth="218.0" text="Email" fx:id="email" />
+                  <TableColumn prefWidth="228.0" text="Adress" fx:id="adress" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

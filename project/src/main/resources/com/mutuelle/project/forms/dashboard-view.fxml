@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="862.0" prefWidth="1211.0" styleClass="dashboard" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mutuelle.project.controller.DashboardController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane focusTraversable="true" layoutX="2.0" layoutY="-2.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.82" prefHeight="862.0" prefWidth="1211.0" style="-fx-background-color: #333;">
+               <children>
+                  <Button id="btn_add" layoutX="312.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Add client" onAction="#addClient">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.3696682464454976">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6574074029922485" green="1.0" blue="0.7887345552444458" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Button id="btn_show" layoutX="672.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Show Clients" onAction="#showclient">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.6574074029922485" green="1.0" blue="0.7887345552444458" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
