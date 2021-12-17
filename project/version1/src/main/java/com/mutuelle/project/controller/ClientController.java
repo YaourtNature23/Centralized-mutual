@@ -3,6 +3,8 @@ package com.mutuelle.project.controller;
 import com.mutuelle.project.AppApplication;
 import com.mutuelle.project.implement.ClientImplement;
 import com.mutuelle.project.model.Client;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -99,6 +101,12 @@ public class ClientController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
+
     }
+    // add your data here from any source
+    private ObservableList<Client> studentsModels = FXCollections.observableArrayList(
+            new Client(1,"Amos", "Chepchieng"),
+            new StudentsModel(2,"Keep", "Too"),
+            );
+
 }

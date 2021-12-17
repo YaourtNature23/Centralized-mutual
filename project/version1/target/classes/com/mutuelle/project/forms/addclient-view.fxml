@@ -75,6 +75,7 @@
    <center>
       <Pane prefHeight="612.0" prefWidth="762.0" BorderPane.alignment="CENTER">
          <children>
+
             <TextField fx:id="numberBadge" layoutX="14.0" layoutY="41.0" prefHeight="26.0" prefWidth="300.0" promptText="number Badge" />
             <TextField fx:id="companyName" layoutX="14.0" layoutY="82.0" prefWidth="300.0" promptText="company Name" />
             <DatePicker fx:id="date" layoutX="7.0" layoutY="131.0" prefWidth="300.0" promptText="date" />
@@ -84,6 +85,7 @@
             <TextField fx:id="phone" layoutX="14.0" layoutY="336.0" prefWidth="300.0" promptText="phone Number" />
             <TextField fx:id="email" layoutX="14.0" layoutY="391.0" prefWidth="300.0" promptText="email" />
             <TextField fx:id="adress" layoutX="26.0" layoutY="435.0" prefWidth="300.0" promptText="adress" />
+
             <Label layoutX="447.0" layoutY="53.0" text="Error" visible="false" />
             <Label layoutX="447.0" layoutY="93.0" text="Error" visible="false" />
             <Label layoutX="447.0" layoutY="129.0" text="Error" visible="false" />
@@ -93,6 +95,7 @@
             <Label layoutX="447.0" layoutY="347.0" text="Error" visible="false" />
             <Label layoutX="447.0" layoutY="402.0" text="Error" visible="false" />
             <Label layoutX="447.0" layoutY="446.0" text="Error" visible="false" />
+
             <Label layoutX="351.0" layoutY="56.0" text="*" textFill="RED" />
             <Label layoutX="351.0" layoutY="96.0" text="*" textFill="RED" />
             <Label layoutX="351.0" layoutY="132.0" text="*" textFill="RED" />
@@ -112,7 +115,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="showClient" layoutX="379.0" layoutY="529.0" mnemonicParsing="false" onAction="#addClient" prefHeight="39.0" prefWidth="111.0" text="SHow client" textFill="#0598ff">
+            <Button fx:id="showClient" layoutX="379.0" layoutY="529.0" mnemonicParsing="false" onAction="#showclientD" prefHeight="39.0" prefWidth="111.0" text="SHow client" textFill="#0598ff">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

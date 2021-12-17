@@ -115,7 +115,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="showClient" layoutX="379.0" layoutY="529.0" mnemonicParsing="false" onAction="#addClient" prefHeight="39.0" prefWidth="111.0" text="SHow client" textFill="#0598ff">
+            <Button fx:id="showClient" layoutX="379.0" layoutY="529.0" mnemonicParsing="false" onAction="#showclientD" prefHeight="39.0" prefWidth="111.0" text="SHow client" textFill="#0598ff">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

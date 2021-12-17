@@ -24,7 +24,7 @@
                   </Label>
                </children>
             </Pane>
-            <Button fx:id="addClient" layoutX="1076.0" layoutY="59.0" mnemonicParsing="false" onAction="#addClient" prefHeight="39.0" prefWidth="111.0" text="Add client" textFill="#0598ff">
+            <Button fx:id="addClient" layoutX="1076.0" layoutY="59.0" mnemonicParsing="false" onAction="#addClientD" prefHeight="39.0" prefWidth="111.0" text="Add client" textFill="#0598ff">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
