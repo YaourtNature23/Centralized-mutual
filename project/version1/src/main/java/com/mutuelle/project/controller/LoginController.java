@@ -59,4 +59,7 @@ public class LoginController {
         }
         ap.changeScene("forms/dashboard-view.fxml");
     }
+    public void showClient(){
+
+    }
 }

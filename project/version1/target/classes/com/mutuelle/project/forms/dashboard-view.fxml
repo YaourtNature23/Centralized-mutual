@@ -9,13 +9,13 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="862.0" prefWidth="1211.0" styleClass="dashboard" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mutuelle.project.controller.DashboardController">
+<BorderPane id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="862.0" prefWidth="1211.0" styleClass="dashboard" stylesheets="@../assets/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mutuelle.project.controller.ClientController">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Pane focusTraversable="true" layoutX="2.0" layoutY="-2.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.82" prefHeight="862.0" prefWidth="1211.0" style="-fx-background-color: #333;">
                <children>
-                  <Button id="btn_add" layoutX="312.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Add client" onAction="#addClient">
+                  <Button id="btn_add" layoutX="312.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Add client" onAction="#addClientD">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font>
@@ -39,7 +39,7 @@
                         </LinearGradient>
                      </textFill>
                   </Button>
-                  <Button id="btn_show" layoutX="672.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Show Clients" onAction="#showclient">
+                  <Button id="btn_show" layoutX="672.0" layoutY="363.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="221.0" style="-fx-background-color: #000;" text="Show Clients" onAction="#showclientD">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font>

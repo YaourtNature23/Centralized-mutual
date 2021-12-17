@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.TextField?>
-<SplitPane fx:controller="com.mutuelle.project.controller.ShowClientController" dividerPositions="0.5" orientation="VERTICAL" prefHeight="851.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="851.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mutuelle.project.controller.ClientController">
   <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="598.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="1237.0">
          <children>
             <Pane prefHeight="156.0" prefWidth="602.0">
                <children>
@@ -23,20 +24,25 @@
                   </Label>
                </children>
             </Pane>
+            <Button fx:id="addClient" layoutX="1076.0" layoutY="59.0" mnemonicParsing="false" onAction="#addClient" prefHeight="39.0" prefWidth="111.0" text="Add client" textFill="#0598ff">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
          </children></AnchorPane>
     <AnchorPane prefHeight="381.0" prefWidth="821.0">
          <children>
             <TableView layoutY="-4.0" prefHeight="697.0" prefWidth="1237.0">
               <columns>
-                <TableColumn prefWidth="120.0" text="badge number" fx:id="number" />
-                <TableColumn prefWidth="115.0" text="Company name" fx:id="companyName" />
-                  <TableColumn minWidth="2.0" prefWidth="114.0" text="Work start date" fx:id="date" />
-                  <TableColumn prefWidth="105.0" text="First name" fx:id="firstName"/>
-                  <TableColumn prefWidth="97.0" text="name" fx:id="name"/>
-                  <TableColumn prefWidth="96.0" text="CIN" fx:id="cin" />
-                  <TableColumn prefWidth="137.0" text="Telephone" fx:id="telephon"/>
-                  <TableColumn prefWidth="218.0" text="Email" fx:id="email" />
-                  <TableColumn prefWidth="228.0" text="Adress" fx:id="adress" />
+                <TableColumn fx:id="cnumber" prefWidth="120.0" text="badge number" />
+                <TableColumn fx:id="ccompanyName" prefWidth="115.0" text="Company name" />
+                  <TableColumn fx:id="cdate" minWidth="2.0" prefWidth="114.0" text="Work start date" />
+                  <TableColumn fx:id="cfirstName" prefWidth="105.0" text="First name" />
+                  <TableColumn fx:id="cname" prefWidth="97.0" text="name" />
+                  <TableColumn fx:id="ccin" prefWidth="96.0" text="CIN" />
+                  <TableColumn fx:id="telephon" prefWidth="137.0" text="Telephone" />
+                  <TableColumn fx:id="cemail" prefWidth="218.0" text="Email" />
+                  <TableColumn fx:id="cadress" prefWidth="228.0" text="Adress" />
               </columns>
             </TableView>
          </children></AnchorPane>
