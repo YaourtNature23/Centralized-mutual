@@ -1,12 +1,23 @@
 package com.mutuelle.project.model;
 
 public class Fonctionnaire {
+    private int official_id;
+    private String firstname;
+    private String lastname;
+    private String cin;
+    private String phone;
+    private String email;
+    private String password;
+    private Entity entity;
+
     public Fonctionnaire() {
+
     }
 
-    public Fonctionnaire(String firstName, String lastName, String cin, String phone, String email, String password, String entity) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Fonctionnaire(int official_id, String firstname, String lastname, String cin, String phone, String email, String password, Entity entity) {
+        this.official_id = official_id;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.cin = cin;
         this.phone = phone;
         this.email = email;
@@ -14,28 +25,20 @@ public class Fonctionnaire {
         this.entity = entity;
     }
 
-    private String firstName;
-    private String lastName;
-    private String cin;
-    private String phone;
-    private String email;
-    private String password;
-    private String entity;
-
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getCin() {
@@ -62,6 +65,18 @@ public class Fonctionnaire {
         this.email = email;
     }
 
+    public Entity getEntity() {
+        return entity;
+    }
+
+    public void setEntity(Entity entity) {
+        this.entity = entity;
+    }
+
+    public int getOfficial_id() {
+        return official_id;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -70,24 +85,17 @@ public class Fonctionnaire {
         this.password = password;
     }
 
-    public String getEntity() {
-        return entity;
-    }
-
-    public void setEntity(String entity) {
-        this.entity = entity;
-    }
-
     @Override
     public String toString() {
         return "Fonctionnaire{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                "official_id=" + official_id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", cin='" + cin + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", entity='" + entity + '\'' +
+                ", entity=" + entity +
                 '}';
     }
 }
