@@ -1,7 +1,6 @@
 package com.mutuelle.project.controller;
 
 import com.mutuelle.project.implement.ClientImplement;
-import com.mutuelle.project.model.Client;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
@@ -9,7 +8,6 @@ import javafx.scene.control.TextField;
 
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 

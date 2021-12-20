@@ -2,7 +2,6 @@ package com.mutuelle.project.interfaces;
 
 import com.mutuelle.project.model.Client;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface ClientInterface {

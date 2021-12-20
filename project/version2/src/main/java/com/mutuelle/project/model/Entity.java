@@ -15,13 +15,6 @@ public class Entity {
         this.ent_site = ent_site;
     }
 
-    public Entity(String ent_name, String ent_address, String ent_phone, String ent_site) {
-        this.setEnt_name(ent_name);
-        this.setEnt_address(ent_address);
-        this.setEnt_phone(ent_phone);
-        this.setEnt_site(ent_site);
-    }
-
     public String getEnt_name() {
         return ent_name;
     }
