@@ -47,8 +47,8 @@ public class AddClientController {
             Date dateUp = c.getTime();
 
             ClientImplement clientImplement = new ClientImplement();
-            Client client = new Client(this.numberBadge.getText(),this.companyName.getText(),dateUp, this.firstName.getText(), this.name.getText(), this.cin.getText(), this.phone.getText(),this.email.getText(),this.adress.getText());
-            System.out.println(client.getAdress());
-            clientImplement.addClientInFile(client);
+            //Client client = new Client(this.numberBadge.getText(),this.companyName.getText(),dateUp, this.firstName.getText(), this.name.getText(), this.cin.getText(), this.phone.getText(),this.email.getText(),this.adress.getText());
+            //System.out.println(client.getAddress());
+            //clientImplement.addClientInFile(client);
     }}
 }
