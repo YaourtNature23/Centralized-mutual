@@ -1,71 +1,63 @@
 package com.mutuelle.project.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Client {
-    private String NumberPadge;
-    private String ComapnyName;
-    private Date startDate;
-    private String firstName;
-    private String name;
+    private int client_id;
+    private String badgeNumber;
     private String cin;
-    private String Phone;
+    private String passport;
+    private String firstname;
+    private String lastname;
+    private String phone;
     private String email;
-    private String adress;
+    private String address;
+    private String company_name;
+    private LocalDate hire_date;
+    private int official_id;
+    private LocalDate created_at;
 
-    public Client(String numberPadge, String comapnyName, Date startDate, String firstName, String name, String cin, String phone, String email, String adress) {
-        NumberPadge = numberPadge;
-        ComapnyName = comapnyName;
-        this.startDate = startDate;
-        this.firstName = firstName;
-        this.name = name;
+    public Client(){
+    }
+
+    public Client(int client_id, String badgeNumber, String cin, String passport, String firstname, String lastname, String phone, String email, String address, String company_name, LocalDate hire_date, int official_id, LocalDate created_at) {
+        this.client_id = client_id;
+        this.badgeNumber = badgeNumber;
         this.cin = cin;
-        Phone = phone;
+        this.passport = passport;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phone = phone;
         this.email = email;
-        this.adress = adress;
+        this.address = address;
+        this.company_name = company_name;
+        this.hire_date = hire_date;
+        this.official_id = official_id;
+        this.created_at = created_at;
     }
 
-    public Client() {
+    public Client(String badgeNumber, String cin, String passport, String firstname, String lastname, String phone, String email, String address, String company_name, LocalDate hire_date, int official_id, LocalDate created_at) {
+        this.badgeNumber = badgeNumber;
+        this.cin = cin;
+        this.passport = passport;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.company_name = company_name;
+        this.hire_date = hire_date;
+        this.official_id = official_id;
+        this.created_at = created_at;
     }
 
-    public String getNumberPadge() {
-        return NumberPadge;
+    public String getBadgenumber() {
+        return badgeNumber;
     }
 
-    public void setNumberPadge(String numberPadge) {
-        NumberPadge = numberPadge;
-    }
-
-    public String getComapnyName() {
-        return ComapnyName;
-    }
-
-    public void setComapnyName(String comapnyName) {
-        ComapnyName = comapnyName;
-    }
-
-    public Date getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setBadgeNumber(String badgeNumber) {
+        this.badgeNumber = badgeNumber;
     }
 
     public String getCin() {
@@ -76,12 +68,12 @@ public class Client {
         this.cin = cin;
     }
 
-    public String getPhone() {
-        return Phone;
+    public String getPassport() {
+        return passport;
     }
 
-    public void setPhone(String phone) {
-        Phone = phone;
+    public void setPassport(String passport) {
+        this.passport = passport;
     }
 
     public String getEmail() {
@@ -92,11 +84,71 @@ public class Client {
         this.email = email;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCompanyName() {
+        return company_name;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.company_name = companyName;
+    }
+
+    public LocalDate getDateStart() {
+        return hire_date;
+    }
+
+    public void setDateStart(LocalDate dateStart) {
+        this.hire_date = dateStart;
+    }
+
+    public int getClient_id() {
+        return client_id;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public int getOfficial_id() {
+        return official_id;
+    }
+
+    public void setOfficial_id(int official_id) {
+        this.official_id = official_id;
+    }
+
+    public LocalDate getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(LocalDate created_at) {
+        this.created_at = created_at;
     }
 }
