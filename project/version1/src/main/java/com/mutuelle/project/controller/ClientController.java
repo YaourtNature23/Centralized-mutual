@@ -105,8 +105,8 @@ public class ClientController implements Initializable {
     }
     // add your data here from any source
     private ObservableList<Client> studentsModels = FXCollections.observableArrayList(
-            new Client(1,"Amos", "Chepchieng"),
-            new StudentsModel(2,"Keep", "Too"),
+            //new Client(1,"Amos", "Chepchieng"),
+            //new StudentsModel(2,"Keep", "Too"),
             );
 
 }
